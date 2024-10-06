@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getPokemons } from "../lib/api/pokemon";
 
 export default async function Page() {
@@ -42,6 +43,12 @@ export default async function Page() {
                 <h2 className="text-lg font-semibold text-gray-800 mb-2">
                   {pokemon.name}
                 </h2>
+                <Link
+                  href={`/pokemon/${pokemon.name}`}
+                  className="text-blue-500 hover:text-blue-700"
+                >
+                  View Details
+                </Link>
               </div>
             ))}
           </div>
