@@ -1,7 +1,6 @@
 "use client";
 
 import { usePokemon } from "../../hooks/usePokemon";
-import Image from "next/image";
 
 const PokemonList = () => {
   const {
@@ -37,7 +36,7 @@ const PokemonList = () => {
             key={pokemon.name}
             className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6"
           >
-            <Image
+            <img
               src={pokemon.image}
               alt={pokemon.name}
               width={200}

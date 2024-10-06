@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { getPokemons } from "../lib/api/pokemon";
 
 export default async function Page() {
@@ -33,7 +32,7 @@ export default async function Page() {
                 key={pokemon.name}
                 className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6"
               >
-                <Image
+                <img
                   src={pokemon.image}
                   alt={pokemon.name}
                   width={200}
